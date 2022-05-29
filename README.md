@@ -7,6 +7,11 @@ Link to the project: https://sql-query.vercel.app/
 
 This project is a web-based **dummy** application that runs SQL Queries and displays the results of the query. It includes a space to accept SQL queries and displays a table when the query is run. There is **5** predefined sets of queries and predefined sets of tables showing some data. You can choose to run/hide one or multiple queries at a time. The application does not have a backend, a query engine, or query validation. Dummy data is displayed when any query runs. 
 
+## Dependencies/Packages installed in the project
+
+Bootstrap: v5.1.3<br/>
+React-Bootstrap is a component-based library that provides native Bootstrap components as pure React components.
+
 ## Deployment of the project
 
 This project was deployed with Git by using [Vercel for GitHub](https://vercel.com/docs/concepts/git/vercel-for-github).<br/>

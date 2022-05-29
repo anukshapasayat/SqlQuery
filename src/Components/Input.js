@@ -28,7 +28,7 @@ export default function Input() {
   return (
     <div style={{ textAlign: "center" }}>
       <div>
-        <h5>Enter Query:</h5>
+        <h2>Enter Query:</h2>
         <form onSubmit={handleSubmit}>
           <input
             value={value}
@@ -50,29 +50,29 @@ export default function Input() {
           <br />
         </form>
       </div>
-      <h5>Predefined Set of Queries:</h5>
+      <h2>Predefined Set of Queries:</h2>
       <div>
-        <input type="text" readOnly={true} value="Select * from todos;" />
+        <input id="query" type="text" readOnly={true} value="Select * from todos;" />
         <button onClick={() => setShow(true)}>Run</button>
         <button onClick={() => setShow(false)}>Hide</button>
       </div>
       <div>
-        <input type="text" readOnly={true} value="Select * from users" />
+        <input id="query" type="text" readOnly={true} value="Select * from users" />
         <button onClick={() => setShow1(true)}>Run</button>
         <button onClick={() => setShow1(false)}>Hide</button>
       </div>
       <div>
-        <input type="text" readOnly={true} value="Select * from quotes;" />
+        <input id="query" type="text" readOnly={true} value="Select * from quotes;" />
         <button onClick={() => setShow2(true)}>Run</button>
         <button onClick={() => setShow2(false)}>Hide</button>
       </div>
       <div>
-        <input type="text" readOnly={true} value="Select * from comments;" />
+        <input id="query" type="text" readOnly={true} value="Select * from comments;" />
         <button onClick={() => setShow3(true)}>Run</button>
         <button onClick={() => setShow3(false)}>Hide</button>
       </div>
       <div>
-        <input type="text" readOnly={true} value="Select * from posts;" />
+        <input id="query" type="text" readOnly={true} value="Select * from posts;" />
         <button onClick={() => setShow4(true)}>Run</button>
         <button onClick={() => setShow4(false)}>Hide</button>
       </div>
@@ -80,7 +80,7 @@ export default function Input() {
         <div>
           <h3>Results for  "Select * from todos;" :</h3>{" "}
           <div className="query">
-            <Display5 />
+            <Display1 />
           </div>
         </div>
       ) : null}
@@ -88,7 +88,7 @@ export default function Input() {
         <div>
           <h3>Results for  "Select * from users;" :</h3>{" "}
           <div className="query">
-            <Display5 />
+            <Display2 />
           </div>
         </div>
       ) : null}
@@ -96,7 +96,7 @@ export default function Input() {
         <div>
           <h3>Results for  "Select * from quotes;" : </h3>
           <div className="query">
-            <Display5 />
+            <Display3 />
           </div>
         </div>
       ) : null}
@@ -104,7 +104,7 @@ export default function Input() {
         <div>
           <h3>Results for  "Select * from comments;" : </h3>
           <div className="query">
-            <Display5 />
+            <Display4 />
           </div>
         </div>
       ) : null}

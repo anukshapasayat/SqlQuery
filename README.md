@@ -41,6 +41,10 @@ Lighthouse is an automated tool for improving the quality of your site. You give
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs the node-modules and dependencies.
+
 ### `npm start`
 
 Runs the app in the development mode.\
